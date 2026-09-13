@@ -580,7 +580,8 @@ const socialProofNotifications = [
   { name: 'Lucas Gabriel', city: 'Belo Horizonte - MG', action: 'adquiriu o Combo Supremo 2026 ⭐' },
   { name: 'Beatriz Lima', city: 'Curitiba - PR', action: 'adquiriu o Pack Biologia Celular & BNCC 🧬' },
   { name: 'Rafael Torres', city: 'Rio de Janeiro - RJ', action: 'adquiriu o Manual de Redação Nota 1000 ✍️' },
-  { name: 'Camila Ribeiro', city: 'Fortaleza - CE', action: 'adquiriu o Combo Carreiras Tribunais ⚖️' }
+  { name: 'Camila Ribeiro', city: 'Fortaleza - CE', action: 'adquiriu o Combo Decorando Formulas ⚖️' }
+  //criar mais algumas
 ];
 
 let toastIndex = 0;
