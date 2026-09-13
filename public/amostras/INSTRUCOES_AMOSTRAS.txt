@@ -1,0 +1,11 @@
+PASTA DE AMOSTRAS GRATUITAS (LEAD MAGNETS)
+--------------------------------------------
+
+Coloque aqui os seus arquivos PDF das amostras grátis para os alunos baixarem!
+
+Exemplo de uso no site:
+Se você colocar o arquivo `resumo_biologia_gratis.pdf` aqui dentro, o link para o aluno baixar no site será:
+`/amostras/resumo_biologia_gratis.pdf`
+
+Arquivos atuais nesta pasta:
+- amostra_prof_maraccini.png (Exemplo de amostra visual)

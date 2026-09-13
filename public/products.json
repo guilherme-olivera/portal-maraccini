@@ -1,0 +1,160 @@
+[
+  {
+    "id": "combo-supremo",
+    "category": "combos",
+    "badge": "MAIS VENDIDO • PACOTE COMPLETO ⭐",
+    "badgeColor": "bg-amber-400/20 text-amber-300 border-amber-400/40",
+    "title": "Combo Supremo ENEM, Vestibulares & Fundamental",
+    "desc": "O acervo definitivo da Profª. Juliana Maraccini com mais de 350 mapas mentais ilustrados, resumos BNCC e banco de questões comentadas.",
+    "originalPrice": "R$ 197,00",
+    "price": "R$ 67,90",
+    "installments": "ou 6x de R$ 12,40",
+    "checkoutUrl": "https://pay.kiwify.com.br/Uuu8KXh",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "350+ Mapas Mentais Ilustrados em Alta Resolução (PDF)",
+      "História das Células, Biologia, Química, Física e História",
+      "Alinhado com a BNCC e incidência dos vestibulares",
+      "Acesso vitalício + Atualizações do ciclo 2026",
+      "Bônus: Cronograma de Estudos de Alta Fixação"
+    ],
+    "detailedTopics": [
+      "Ciências da Natureza (Citologia, Teoria Celular, Procariontes/Eucariontes, Ecologia, Química e Física)",
+      "Ciências Humanas (História do Brasil & Geral, Geopolítica, Filosofia e Sociologia)",
+      "Linguagens & Redação (Modelos nota 1000, conectivos e repertórios)",
+      "Matemática Descomplicada (Fórmulas visuais de Geometria, Funções e Estatística)"
+    ]
+  },
+  {
+    "id": "mapas-biologia-celular",
+    "category": "mapas",
+    "badge": "ILUSTRADO • ALTA RETENÇÃO 🧬",
+    "badgeColor": "bg-emerald-400/20 text-emerald-300 border-emerald-400/40",
+    "title": "Pack Mapas Mentais: Biologia & Citologia",
+    "desc": "Mapas ilustrados da Profª. Juliana Maraccini cobrindo Teoria Celular, Organelas, Procariontes, Eucariontes e Ecologia.",
+    "originalPrice": "R$ 97,00",
+    "price": "R$ 37,00",
+    "installments": "ou 3x de R$ 13,10",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-biologia",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "110 Mapas Mentais Ilustrados de Biologia",
+      "Esquemas visuais de Células, Tecidos e Órgãos",
+      "Didática colorida perfeita para impressão em A4",
+      "Mnemônicos exclusivos para memorização rápida"
+    ],
+    "detailedTopics": [
+      "História das Células (Robert Hooke 1665 e Cortiça)",
+      "Os 3 Pilares da Teoria Celular (Formação, Função e Origem)",
+      "Procariontes vs Eucariontes & Autotróficos vs Heterotróficos"
+    ]
+  },
+  {
+    "id": "redacao-nota-1000",
+    "category": "materias",
+    "badge": "SEGREDO DOS 900+ ✍️",
+    "badgeColor": "bg-purple-400/20 text-purple-300 border-purple-400/40",
+    "title": "Manual Visual de Redação Nota 1000",
+    "desc": "Estrutura infalível de parágrafos, conectivos estratégicos e mais de 40 repertórios curinga para qualquer tema do ENEM.",
+    "originalPrice": "R$ 77,00",
+    "price": "R$ 29,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-redacao",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/ebook_redacao.png",
+    "features": [
+      "3 Esqueletos de Redação prontos para adaptação",
+      "40+ Repertórios Sociológicos e Filosóficos coringa",
+      "Tabela comparativa de Competências do ENEM",
+      "Checklist de revisão antes de passar a limpo"
+    ],
+    "detailedTopics": [
+      "Módulo Introdução Hipnotizante: teses bem articuladas",
+      "Módulo Argumentação Sólida: D1 e D2 sem furos de lógica",
+      "Módulo Proposta de Intervenção: os 5 elementos obrigatórios garantidos"
+    ]
+  },
+  {
+    "id": "simulado-gabaritado",
+    "category": "simulados",
+    "badge": "COM RESOLUÇÃO PASSO A PASSO 📝",
+    "badgeColor": "bg-cyan-400/20 text-cyan-300 border-cyan-400/40",
+    "title": "Caderno de 600 Questões Comentadas",
+    "desc": "As questões mais recorrentes dos últimos 8 anos comentadas alternativa por alternativa para você nunca mais cair em pegadinhas.",
+    "originalPrice": "R$ 89,00",
+    "price": "R$ 34,90",
+    "installments": "ou 3x de R$ 12,30",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-questoes",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "600 Questões divididas por assunto e peso TRI",
+      "Comentários do que torna cada alternativa incorreta",
+      "Gabarito rápido e estatística de incidência",
+      "Formato interativo para marcar direto no PDF"
+    ],
+    "detailedTopics": [
+      "Questões fáceis e médias para garantir pontuação TRI alta",
+      "Análise de pegadinhas frequentes de enunciados longos",
+      "Estratégia de gestão de tempo de prova"
+    ]
+  },
+  {
+    "id": "humanas-express",
+    "category": "materias",
+    "badge": "LINHAS DO TEMPO ILUSTRADAS 📜",
+    "badgeColor": "bg-amber-400/20 text-amber-300 border-amber-400/40",
+    "title": "E-book Visual Humanas Express",
+    "desc": "Toda a História Geral, do Brasil, Geografia e Sociologia explicadas através de cronologias e infográficos dinâmicos.",
+    "originalPrice": "R$ 67,00",
+    "price": "R$ 27,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-humanas",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_direito.png",
+    "features": [
+      "Linhas do tempo ilustradas desde a Antiguidade",
+      "Geografia física e geopolítica atualizada 2026",
+      "Quadro sinóptico de Filósofos e suas correntes",
+      "Mapas comparativos de biomas e relevos"
+    ],
+    "detailedTopics": [
+      "Brasil Colônia, Império e República em ordem cronológica visual",
+      "Guerras Mundiais, Guerra Fria e Conflitos Contemporâneos",
+      "Urbanização, Agricultura e Demografia Brasileira"
+    ]
+  },
+  {
+    "id": "combo-concursos",
+    "category": "combos",
+    "badge": "CONCURSOS PÚBLICOS ⚖️",
+    "badgeColor": "bg-indigo-400/20 text-indigo-300 border-indigo-400/40",
+    "title": "Combo Carreiras Administrativas & Tribunais",
+    "desc": "Mapas mentais de Direito Constitucional, Administrativo, Português e Raciocínio Lógico para concursos de nível médio e superior.",
+    "originalPrice": "R$ 147,00",
+    "price": "R$ 57,00",
+    "installments": "ou 5x de R$ 12,20",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-concursos",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_direito.png",
+    "features": [
+      "Direito Constitucional e Administrativo sintetizado",
+      "Português esquematizado (Crases, Regências e Sintaxe)",
+      "Raciocínio Lógico através de diagramas lógicos",
+      "Mnemônicos para não errar prazos e artigos de lei"
+    ],
+    "detailedTopics": [
+      "Constituição Federal: Artigos 1º ao 5º esquematizados",
+      "Atos Administrativos, Poderes e Licitações simplificadas",
+      "Tabelas Verdade, Conectivos lógicos e Equivalências"
+    ]
+  }
+]
