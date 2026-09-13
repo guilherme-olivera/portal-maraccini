@@ -15,157 +15,15 @@ async function loadProductsData() {
   renderProducts();
 }
 
-// DATASET DE MAPAS MENTAIS INTERATIVOS REAL DA PROFª. JULIANA MARACCINI
-const mindmapData = {
-  biologia: {
-    title: 'Biologia Celular & BNCC EF06CI05 (Profª. Juliana Maraccini)',
-    root: 'Citologia & Teoria Celular',
-    nodes: [
-      {
-        id: 'n1',
-        title: 'Descoberta das Células',
-        badge: 'História (1665)',
-        icon: 'microscope',
-        color: '#06B6D4',
-        tip: 'Descobridor: **Robert Hooke (1665)** ao analisar fatias de cortiça (*Cellula = pequeno compartimento*).',
-        details: 'A cortiça é um tecido vegetal morto. O termo foi criado para descrever as pequenas cavidades observadas no microscópio primitivo.'
-      },
-      {
-        id: 'n2',
-        title: 'Teoria Celular: 3 Pilares',
-        badge: 'Fundamental',
-        icon: 'shield',
-        color: '#10B981',
-        tip: '1. **Formação** (menor unidade viva) | 2. **Função** (unidades funcionais) | 3. **Origem** (toda célula vem de outra pré-existente).',
-        details: 'Todos os seres vivos são constituídos por células (exceto os vírus, que são acelulares e parasitas intracelulares obrigatórios).'
-      },
-      {
-        id: 'n3',
-        title: 'Organização Corporal',
-        badge: 'Hierarquia',
-        icon: 'layers',
-        color: '#F59E0B',
-        tip: '**Célula ➔ Tecido ➔ Órgão ➔ Sistema ➔ Organismo.**',
-        details: 'Seres Unicelulares possuem 1 única célula (Bactérias e Protozoários). Pluricelulares possuem múltiplas células (Animais, Plantas e Fungos).'
-      },
-      {
-        id: 'n4',
-        title: 'Procariontes vs Eucariontes',
-        badge: 'Cai Sempre em Provas',
-        icon: 'git-branch',
-        color: '#6366F1',
-        tip: 'Procariontes: **DNA Solto (sem carioteca)**. Eucariontes: **DNA dentro do Núcleo com organelas membranosa**.',
-        details: 'Bactérias são procariontes. Animais, plantas, fungos e protozoários são eucariontes com organelas complexas.'
-      },
-      {
-        id: 'n5',
-        title: 'Nutrição de Microrganismos',
-        badge: 'Metabolismo',
-        icon: 'sun',
-        color: '#8B5CF6',
-        tip: 'Autotróficos: **Produzem o próprio alimento (fotossíntese)** | Heterotróficos: **Obtêm alimento do meio**.',
-        details: 'Cianobactérias e algas são autotróficas. Bactérias decompositoras e fungos são heterotróficos essenciais para a reciclagem da matéria.'
-      }
-    ]
-  },
-  direito: {
-    title: 'Direito Constitucional: Artigo 5º & Direitos Fundamentais',
-    root: 'Artigo 5º CF/88',
-    nodes: [
-      {
-        id: 'd1',
-        title: 'Remédios Constitucionais',
-        badge: 'Mnemônico Ouro',
-        icon: 'shield',
-        color: '#6366F1',
-        tip: 'Mnemônico: **Habeas Corpus** (Liberdade de Ir e Vir) | **Habeas Data** (Informações Pessoais).',
-        details: 'Mandado de Segurança protege Direito Líquido e Certo não amparado por HC ou HD. Ação Popular: qualquer cidadão é parte legítima.'
-      },
-      {
-        id: 'd2',
-        title: 'Inviolabilidade do Domicílio',
-        badge: 'Jurisprudência STF',
-        icon: 'home',
-        color: '#06B6D4',
-        tip: 'Regra: Durante o dia com mandado judicial. Qualquer hora em flagrante delito ou desastre.',
-        details: 'A entrada sem mandado à noite exige justa causa prévia comprovada fundamentada em elementos concretos.'
-      },
-      {
-        id: 'd3',
-        title: 'Crimes Imprescritíveis',
-        badge: 'Pegadinha de Prova',
-        icon: 'lock',
-        color: '#EF4444',
-        tip: 'Mnemônico: **RA-ÇÃO** (Raciocínio: Racismo e Ação de Grupos Armados).',
-        details: 'São imprescritíveis e inafiançáveis. Já o crime de Tortura e Tráfico são insuscetíveis de graça ou anistia (TTT).'
-      },
-      {
-        id: 'd4',
-        title: 'Direito de Propriedade',
-        badge: 'Função Social',
-        icon: 'file-text',
-        color: '#10B981',
-        tip: 'Desapropriação por necessidade/utilidade pública com prévia e justa indenização em dinheiro.',
-        details: 'Exceção: Glebas com culturas ilegais (plantas psicotrópicas) são expropriadas sem indenização.'
-      }
-    ]
-  },
-  quimica: {
-    title: 'Química Orgânica: Funções & Isomeria',
-    root: 'Química Orgânica',
-    nodes: [
-      {
-        id: 'q1',
-        title: 'Funções Oxigenadas',
-        badge: 'Identificação',
-        icon: 'droplet',
-        color: '#8B5CF6',
-        tip: 'Álcool (OH em C saturado) | Fenol (OH no Anel Aromático) | Enol (OH em C insaturado).',
-        details: 'Cetona possui carbonila (C=O) entre dois carbonos. Aldeído possui carbonila na ponta da cadeia (C=O ligado a H).'
-      },
-      {
-        id: 'q2',
-        title: 'Funções Nitrogenadas',
-        badge: 'Caráter Ácido-Base',
-        icon: 'zap',
-        color: '#06B6D4',
-        tip: 'Aminas são BASES orgânicas (par de elétrons livre no Nitrogênio).',
-        details: 'Basicidade das aminas: Amina Secundária > Amina Primária > Amina Terciária (em meio aquoso por impedimento estérico).'
-      },
-      {
-        id: 'q3',
-        title: 'Isomeria Plana',
-        badge: 'Mnemônico',
-        icon: 'git-commit',
-        color: '#F59E0B',
-        tip: 'Mnemônico: **PF-CMT** (Posição, Função, Cadeia, Metameria, Tautometria).',
-        details: 'Tautometria é o equilíbrio dinâmico entre enol/aldeído ou enol/cetona.'
-      },
-      {
-        id: 'q4',
-        title: 'Isomeria Óptica',
-        badge: 'Carbono Quiral',
-        icon: 'compass',
-        color: '#10B981',
-        tip: 'Carbono Quiral (C*) está ligado a 4 ligantes DIFERENTES.',
-        details: 'Fórmula de Isômeros Ópticos Ativos = 2^n (onde n é o número de carbonos quirais). Mistura Racêmica é inativa por compensação externa.'
-      }
-    ]
-  }
-};
-
 // ESTADO GLOBAL DA APLICAÇÃO
 let activeFilter = 'all';
 let searchQuery = '';
-let activeMindMapSubject = 'biologia';
 let selectedProductForModal = null;
 
 // INICIALIZAÇÃO
 document.addEventListener('DOMContentLoaded', () => {
   loadProductsData();
   setupEventListeners();
-  loadMindMapSubject('biologia');
-  updateStudyCalculator();
   startSocialProofToasts();
 
   if (window.lucide) {
@@ -245,7 +103,7 @@ function renderProducts() {
       </div>
 
       <div>
-        <!-- Preços & Ancoragem (De R$ 19,90 por R$ 9,90) -->
+        <!-- Preços & Ancoragem -->
         <div class="pt-4 border-t border-slate-800/80 mb-5 flex items-baseline justify-between">
           <div>
             ${priceDisplay}
@@ -314,109 +172,7 @@ function clearSearch() {
   renderProducts();
 }
 
-// 4. DEGUSTADOR INTERATIVO DE MAPAS MENTAIS
-function loadMindMapSubject(subjectKey) {
-  activeMindMapSubject = subjectKey;
-  const data = mindmapData[subjectKey];
-  if (!data) return;
-
-  document.querySelectorAll('.mm-subject-tab').forEach(tab => {
-    if (tab.getAttribute('data-subject') === subjectKey) {
-      tab.classList.add('bg-cyan-500', 'text-slate-950', 'font-bold');
-      tab.classList.remove('bg-slate-900', 'text-slate-400');
-    } else {
-      tab.classList.remove('bg-cyan-500', 'text-slate-950', 'font-bold');
-      tab.classList.add('bg-slate-900', 'text-slate-400');
-    }
-  });
-
-  const rootTitle = document.getElementById('mmRootTitle');
-  if (rootTitle) rootTitle.textContent = data.root;
-
-  const nodesGrid = document.getElementById('mmNodesGrid');
-  if (!nodesGrid) return;
-
-  nodesGrid.innerHTML = data.nodes.map((node, idx) => `
-    <div onclick="selectMindMapNode('${subjectKey}', '${node.id}')" class="mindmap-node glass-card p-4 rounded-2xl border border-slate-700/60 hover:border-cyan-400 relative transition-all cursor-pointer ${idx === 0 ? 'active-node' : ''}" id="mmNode_${node.id}">
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded" style="background:${node.color}22; color:${node.color}; border:1px solid ${node.color}55">
-          ${node.badge}
-        </span>
-        <i data-lucide="${node.icon}" class="w-4 h-4 text-cyan-400"></i>
-      </div>
-      <h4 class="text-sm font-bold text-white mb-1">${node.title}</h4>
-      <p class="text-[11px] text-slate-400 line-clamp-1">${node.tip.replace(/\*\*/g, '')}</p>
-    </div>
-  `).join('');
-
-  selectMindMapNode(subjectKey, data.nodes[0].id);
-
-  if (window.lucide) window.lucide.createIcons();
-}
-
-function selectMindMapNode(subjectKey, nodeId) {
-  const data = mindmapData[subjectKey];
-  if (!data) return;
-
-  const node = data.nodes.find(n => n.id === nodeId);
-  if (!node) return;
-
-  document.querySelectorAll('.mindmap-node').forEach(el => el.classList.remove('active-node'));
-  const activeEl = document.getElementById(`mmNode_${nodeId}`);
-  if (activeEl) activeEl.classList.add('active-node');
-
-  const detailBox = document.getElementById('mmDetailContent');
-  if (detailBox) {
-    detailBox.innerHTML = `
-      <div class="space-y-4 animate-in fade-in duration-300">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full" style="background:${node.color}"></span>
-          <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">${node.badge}</span>
-        </div>
-        <h3 class="text-xl font-extrabold font-display text-white">${node.title}</h3>
-        
-        <div class="p-3.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-xs text-cyan-200 leading-relaxed font-medium">
-          <i data-lucide="zap" class="w-4 h-4 inline mr-1 text-cyan-400"></i>
-          <strong>Dica da Profª. Juliana Maraccini:</strong> ${node.tip.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')}
-        </div>
-
-        <div class="text-xs text-slate-300 leading-relaxed">
-          <strong class="text-slate-100 block mb-1">Como este tema cai na prova:</strong>
-          ${node.details}
-        </div>
-
-        <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
-          <span>Sintetizado em 1 Mapa Mental</span>
-          <a href="#catalogo" class="text-cyan-400 hover:underline font-semibold flex items-center gap-1">
-            Ver Combo Completo <i data-lucide="arrow-right" class="w-3 h-3"></i>
-          </a>
-        </div>
-      </div>
-    `;
-    if (window.lucide) window.lucide.createIcons();
-  }
-}
-
-// 5. CALCULADORA INTERATIVA DE TEMPO E RETENÇÃO DE ESTUDO
-function updateStudyCalculator() {
-  const slider = document.getElementById('studyHoursSlider');
-  const hoursValueDisplay = document.getElementById('studyHoursValue');
-  const savedHoursDisplay = document.getElementById('savedHoursDisplay');
-  const pagesSavedDisplay = document.getElementById('pagesSavedDisplay');
-
-  if (!slider) return;
-
-  const hours = parseInt(slider.value, 10);
-  if (hoursValueDisplay) hoursValueDisplay.textContent = `${hours}h`;
-
-  const hoursSavedPerMonth = Math.round(hours * 18.5);
-  const pagesReduced = Math.round(hours * 75);
-
-  if (savedHoursDisplay) savedHoursDisplay.textContent = `+${hoursSavedPerMonth} Horas economizadas/mês`;
-  if (pagesSavedDisplay) pagesSavedDisplay.textContent = `${pagesReduced} páginas condensadas em mapas`;
-}
-
-// 6. MODAL DE DETALHES DO PRODUTO & SELEÇÃO DE PLATAFORMA DE CHECKOUT
+// 4. MODAL DE DETALHES DO PRODUTO & SELEÇÃO DE PLATAFORMA DE CHECKOUT
 function openProductModal(productId) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
@@ -524,7 +280,7 @@ function openCheckoutChoice(productId) {
   }
 }
 
-// 7. CAPTAÇÃO DE LEADS & AMOSTRA GRÁTIS EM PDF INTERATIVA
+// 5. CAPTAÇÃO DE LEADS & AMOSTRA GRÁTIS EM PDF INTERATIVA
 function handleLeadSubmit(event) {
   event.preventDefault();
   const nameInput = document.getElementById('leadName');
@@ -574,14 +330,27 @@ function closeSampleReaderModal() {
   if (modal) modal.classList.add('hidden');
 }
 
-// 8. NOTIFICAÇÕES SOCIAIS DINÂMICAS (SOCIAL PROOF TOASTS)
+// 6. NOTIFICAÇÕES SOCIAIS DINÂMICAS (SOCIAL PROOF TOASTS)
 const socialProofNotifications = [
   { name: 'Mariana S.', city: 'São Paulo - SP', action: 'acabou de baixar a Amostra da Profª. Juliana Maraccini 🎁' },
   { name: 'Lucas Gabriel', city: 'Belo Horizonte - MG', action: 'adquiriu o Combo Supremo 2026 ⭐' },
   { name: 'Beatriz Lima', city: 'Curitiba - PR', action: 'adquiriu o Pack Biologia Celular & BNCC 🧬' },
   { name: 'Rafael Torres', city: 'Rio de Janeiro - RJ', action: 'adquiriu o Manual de Redação Nota 1000 ✍️' },
-  { name: 'Camila Ribeiro', city: 'Fortaleza - CE', action: 'adquiriu o Combo Decorando Formulas ⚖️' }
-  //criar mais algumas
+  { name: 'Camila Ribeiro', city: 'Fortaleza - CE', action: 'adquiriu o Combo Decorando Fórmulas ⚖️' },
+  { name: 'Fernanda Rocha', city: 'Campinas - SP', action: 'adquiriu o E-book Visual Humanas Express 📜' },
+  { name: 'Thiago Mendes', city: 'Salvador - BA', action: 'baixou a Amostra Grátis de Citologia 🎁' },
+  { name: 'Amanda Alencar', city: 'Recife - PE', action: 'adquiriu o Caderno de 600 Questões Comentadas 📝' },
+  { name: 'Gabriel Vasconcelos', city: 'Porto Alegre - RS', action: 'adquiriu o Combo Supremo ENEM & Vestibulares ⭐' },
+  { name: 'Juliana P.', city: 'Goiânia - GO', action: 'baixou a Amostra VIP de Teoria Celular 🎁' },
+  { name: 'Matheus Oliveira', city: 'Florianópolis - SC', action: 'adquiriu o Pack Mapas Mentais de Biologia 🧬' },
+  { name: 'Larissa Martins', city: 'Manaus - AM', action: 'adquiriu o Manual Visual de Redação Nota 1000 ✍️' },
+  { name: 'Rodrigo S.', city: 'Brasília - DF', action: 'adquiriu o Combo Carreiras Administrativas & Tribunais ⚖️' },
+  { name: 'Carla Dias', city: 'Vitória - ES', action: 'adquiriu o E-book Visual Humanas Express 📜' },
+  { name: 'Felipe N.', city: 'Belém - PA', action: 'baixou o Mapa Mental Ilustrado de Citologia 🎁' },
+  { name: 'Isabela Souza', city: 'Ribeirão Preto - SP', action: 'adquiriu o Combo Supremo 2026 ⭐' },
+  { name: 'Diego Ferreira', city: 'Natal - RN', action: 'adquiriu o Caderno de 600 Questões Comentadas 📝' },
+  { name: 'Carolina Mendes', city: 'Maceió - AL', action: 'adquiriu o Pack Biologia Celular & BNCC 🧬' },
+  { name: 'Vinícius Ramos', city: 'João Pessoa - PB', action: 'adquiriu o Manual de Redação Nota 1000 ✍️' }
 ];
 
 let toastIndex = 0;
@@ -610,7 +379,7 @@ function startSocialProofToasts() {
   }, 14000);
 }
 
-// 9. FAQ ACCORDION INTERATIVO E BUSCA DE DÚVIDAS
+// 7. FAQ ACCORDION INTERATIVO E BUSCA DE DÚVIDAS
 function toggleFaq(button) {
   const content = button.nextElementSibling;
   const icon = button.querySelector('[data-lucide="chevron-down"]');
@@ -642,7 +411,7 @@ function filterFaq(query) {
   });
 }
 
-// 10. TOGGLE MENU MOBILE
+// 8. TOGGLE MENU MOBILE
 function toggleMobileMenu() {
   const menu = document.getElementById('mobileMenu');
   if (menu) {
@@ -658,9 +427,6 @@ window.filterProducts = function (cat) {
 window.openProductModal = openProductModal;
 window.closeProductModal = closeProductModal;
 window.openCheckoutChoice = openCheckoutChoice;
-window.loadMindMapSubject = loadMindMapSubject;
-window.selectMindMapNode = selectMindMapNode;
-window.updateStudyCalculator = updateStudyCalculator;
 window.handleLeadSubmit = handleLeadSubmit;
 window.openSamplePreviewModal = openSamplePreviewModal;
 window.closeSampleReaderModal = closeSampleReaderModal;
