@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profª. Juliana Maraccini | Fonte do Saber • Mapas Mentais & Resumos de Elite</title>
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons CDN -->
@@ -12,7 +13,9 @@
   <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="/style.css">
 
@@ -42,7 +45,8 @@
   </script>
 </head>
 
-<body class="relative min-h-screen text-slate-200 antialiased selection:bg-cyan-500 selection:text-slate-950 pb-20 sm:pb-0">
+<body
+  class="relative min-h-screen text-slate-200 antialiased selection:bg-cyan-500 selection:text-slate-950 pb-20 sm:pb-0">
 
   <!-- Ambient Light Orbs Animados -->
   <div class="ambient-sphere w-96 h-96 bg-indigo-600/25 top-0 left-1/4 -translate-x-1/2"></div>
@@ -53,16 +57,18 @@
   <!-- Header / Navigation Bar Otimizada -->
   <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-slate-800/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-      
+
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3 shrink-0 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-amber-300 p-0.5 shadow-glow-purple group-hover:shadow-glow-cyan transition-all duration-300">
+        <div
+          class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-amber-300 p-0.5 shadow-glow-purple group-hover:shadow-glow-cyan transition-all duration-300">
           <div class="w-full h-full bg-[#070913] rounded-[10px] flex items-center justify-center">
             <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400"></i>
           </div>
         </div>
         <div class="flex flex-col">
-          <span class="text-base sm:text-lg font-extrabold tracking-tight font-display bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent whitespace-nowrap">
+          <span
+            class="text-base sm:text-lg font-extrabold tracking-tight font-display bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent whitespace-nowrap">
             PROFª. JULIANA MARACCINI<span class="text-cyan-400">.</span>
           </span>
           <span class="text-[10px] tracking-widest uppercase font-semibold text-cyan-400/90 -mt-0.5 whitespace-nowrap">
@@ -72,8 +78,8 @@
       </a>
 
       <!-- Desktop Navigation Links (Sem quebra de linha) -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs xl:text-sm font-semibold text-slate-300 whitespace-nowrap">
-        <a href="#degustacao" class="hover:text-cyan-400 transition-colors py-1">Degustador Interativo</a>
+      <nav
+        class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs xl:text-sm font-semibold text-slate-300 whitespace-nowrap">
         <a href="#sobre" class="hover:text-cyan-400 transition-colors py-1">Profª. Juliana</a>
         <a href="#metodo" class="hover:text-cyan-400 transition-colors py-1">O Método</a>
         <a href="#catalogo" class="hover:text-cyan-400 transition-colors py-1">Materiais & Combos</a>
@@ -83,9 +89,12 @@
 
       <!-- Header Action (Botão alinhado em linha única) -->
       <div class="hidden sm:flex items-center gap-4 shrink-0">
-        <a href="#catalogo" class="relative group inline-flex items-center justify-center p-0.5 overflow-hidden rounded-xl font-bold text-xs tracking-wide whitespace-nowrap">
-          <span class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-indigo-500 to-amber-400 group-hover:opacity-100 transition-opacity"></span>
-          <span class="relative px-4 py-2.5 transition-all ease-out bg-[#070913] rounded-[10px] group-hover:bg-opacity-0 flex items-center gap-2 text-white">
+        <a href="#catalogo"
+          class="relative group inline-flex items-center justify-center p-0.5 overflow-hidden rounded-xl font-bold text-xs tracking-wide whitespace-nowrap">
+          <span
+            class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-indigo-500 to-amber-400 group-hover:opacity-100 transition-opacity"></span>
+          <span
+            class="relative px-4 py-2.5 transition-all ease-out bg-[#070913] rounded-[10px] group-hover:bg-opacity-0 flex items-center gap-2 text-white">
             <i data-lucide="zap" class="w-4 h-4 text-cyan-400 group-hover:text-white shrink-0"></i>
             Explorar Materiais
           </span>
@@ -93,20 +102,29 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none" aria-label="Abrir menu">
+      <button id="mobileMenuBtn" onclick="toggleMobileMenu()"
+        class="lg:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none"
+        aria-label="Abrir menu">
         <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
       </button>
     </div>
 
     <!-- Mobile Dropdown -->
-    <div id="mobileMenu" class="hidden lg:hidden border-b border-slate-800 bg-[#070913]/95 backdrop-blur-xl px-6 py-5 space-y-4">
-      <a href="#degustacao" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">Degustador Interativo</a>
-      <a href="#sobre" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">Profª. Juliana Maraccini</a>
-      <a href="#metodo" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">O Método</a>
-      <a href="#catalogo" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">Materiais & Combos</a>
-      <a href="#amostra" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">Amostra Grátis</a>
-      <a href="#faq" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm" onclick="toggleMobileMenu()">Dúvidas Frequentes</a>
-      <a href="#catalogo" class="w-full py-3 text-center block bg-gradient-to-r from-cyan-500 to-indigo-600 text-white rounded-xl font-bold text-sm" onclick="toggleMobileMenu()">
+    <div id="mobileMenu"
+      class="hidden lg:hidden border-b border-slate-800 bg-[#070913]/95 backdrop-blur-xl px-6 py-5 space-y-4">
+      <a href="#sobre" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm"
+        onclick="toggleMobileMenu()">Profª. Juliana Maraccini</a>
+      <a href="#metodo" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm"
+        onclick="toggleMobileMenu()">O Método</a>
+      <a href="#catalogo" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm"
+        onclick="toggleMobileMenu()">Materiais & Combos</a>
+      <a href="#amostra" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm"
+        onclick="toggleMobileMenu()">Amostra Grátis</a>
+      <a href="#faq" class="block text-slate-300 hover:text-cyan-400 py-1 font-semibold text-sm"
+        onclick="toggleMobileMenu()">Dúvidas Frequentes</a>
+      <a href="#catalogo"
+        class="w-full py-3 text-center block bg-gradient-to-r from-cyan-500 to-indigo-600 text-white rounded-xl font-bold text-sm"
+        onclick="toggleMobileMenu()">
         Ver Todos os Materiais
       </a>
     </div>
@@ -117,13 +135,15 @@
     <!-- HERO SECTION -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 lg:py-28 text-center relative">
       <!-- High-impact Badge -->
-      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border border-cyan-500/40 text-xs font-bold uppercase tracking-wider text-cyan-300 mb-8 animate-glow-pulse shadow-glow-cyan">
+      <div
+        class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border border-cyan-500/40 text-xs font-bold uppercase tracking-wider text-cyan-300 mb-8 animate-glow-pulse shadow-glow-cyan">
         <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
         Profª. Juliana Maraccini • Método de Alta Fixação 2026
       </div>
 
       <!-- Main Headline -->
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-display tracking-tight text-white max-w-5xl mx-auto leading-[1.15]">
+      <h1
+        class="text-4xl sm:text-6xl lg:text-7xl font-black font-display tracking-tight text-white max-w-5xl mx-auto leading-[1.15]">
         Você finalmente encontrou a <br class="hidden sm:inline">
         <span class="bg-gradient-to-r from-cyan-400 via-indigo-300 to-amber-300 bg-clip-text text-transparent">
           Fonte Definitiva do Conhecimento
@@ -132,19 +152,23 @@
 
       <!-- Subtitle -->
       <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-        Chega de apostilas de 800 páginas e vídeo-aulas intermináveis. Domine qualquer disciplina com os <strong class="text-white font-semibold">mapas mentais ilustrados da Profª. Juliana Maraccini</strong>, resumos alinhados à BNCC e simulados comentados.
+        Chega de apostilas de 800 páginas e vídeo-aulas intermináveis. Domine qualquer disciplina com os <strong
+          class="text-white font-semibold">mapas mentais ilustrados da Profª. Juliana Maraccini</strong>, resumos
+        alinhados à BNCC e simulados comentados.
       </p>
 
       <!-- CTAs & Triggers -->
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-        <a href="#catalogo" class="w-full sm:w-auto px-9 py-4 rounded-2xl btn-gradient-primary font-bold text-base shadow-glow-cyan flex items-center justify-center gap-3">
+        <a href="#catalogo"
+          class="w-full sm:w-auto px-9 py-4 rounded-2xl btn-gradient-primary font-bold text-base shadow-glow-cyan flex items-center justify-center gap-3">
           <i data-lucide="compass" class="w-5 h-5"></i>
           Explorar Catálogo & Combos
         </a>
 
-        <a href="#degustacao" class="w-full sm:w-auto px-9 py-4 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-base transition-all flex items-center justify-center gap-2.5">
-          <i data-lucide="brain-circuit" class="w-5 h-5 text-cyan-400"></i>
-          Testar Degustador Interativo
+        <a href="#amostra"
+          class="w-full sm:w-auto px-9 py-4 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-base transition-all flex items-center justify-center gap-2.5">
+          <i data-lucide="gift" class="w-5 h-5 text-cyan-400"></i>
+          Baixar Amostra Grátis
         </a>
       </div>
 
@@ -155,7 +179,8 @@
           <div class="text-xs text-slate-400 mt-2 uppercase tracking-wide">Estudantes Impactados</div>
         </div>
         <div class="p-4">
-          <div class="text-3xl lg:text-5xl font-black font-display text-cyan-400 flex items-center justify-center gap-1">
+          <div
+            class="text-3xl lg:text-5xl font-black font-display text-cyan-400 flex items-center justify-center gap-1">
             4.9 <i data-lucide="star" class="w-6 h-6 fill-cyan-400 text-cyan-400"></i>
           </div>
           <div class="text-xs text-slate-400 mt-2 uppercase tracking-wide">Média de Avaliação (1.400+ reviews)</div>
@@ -174,46 +199,64 @@
     <!-- SEÇÃO INSTITUCIONAL: SOBRE A PROFESSORA JULIANA MARACCINI -->
     <section id="sobre" class="py-20 lg:py-28 scroll-mt-28 relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-cyan-500/40 relative overflow-hidden shadow-glow-cyan">
-          
+        <div
+          class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-cyan-500/40 relative overflow-hidden shadow-glow-cyan">
+
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             <!-- Ilustração / Foto da Professora -->
             <div class="lg:col-span-5 flex flex-col items-center text-center">
-              <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-amber-400 p-1 shadow-glow-purple mb-5">
-                <div class="w-full h-full rounded-[22px] bg-slate-950 flex flex-col items-center justify-center overflow-hidden border border-slate-800">
-                  <img src="/assets/foto_prof_juliana.jpg" alt="Profª. Juliana Maraccini" class="w-full h-full object-cover object-[center_20%] rounded-xl">
+              <div
+                class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-amber-400 p-1 shadow-glow-purple mb-5">
+                <div
+                  class="w-full h-full rounded-[22px] bg-slate-950 flex flex-col items-center justify-center overflow-hidden border border-slate-800">
+                  <img src="/assets/foto_prof_juliana.jpg" alt="Profª. Juliana Maraccini"
+                    class="w-full h-full object-cover object-[center_20%] rounded-xl">
                 </div>
               </div>
 
               <div class="flex flex-wrap justify-center gap-2 mt-2">
-                <span class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Eng. Agrônoma • UniPinhal</span>
-                <span class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Licenciatura em Biologia</span>
-                <span class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30">11+ Anos de Docência</span>
+                <span
+                  class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Eng.
+                  Agrônoma • UniPinhal</span>
+                <span
+                  class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Licenciatura
+                  em Biologia</span>
+                <span
+                  class="text-xs font-bold uppercase px-3 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30">11+
+                  Anos de Docência</span>
               </div>
             </div>
 
             <!-- Bio & Filosofia Didática -->
             <div class="lg:col-span-7 space-y-5">
-              <span class="text-xs font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/30">
+              <span
+                class="text-xs font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/30">
                 Autoridade & Experiência Didática
               </span>
               <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white">
                 Quem é a Profª. Juliana Maraccini?
               </h2>
-              
+
               <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Olá! Sou a <strong class="text-white">Professora Juliana Maraccini</strong>. Sou graduada em <strong>Engenharia Agronômica pela Universidade UniPinhal</strong> e possuo <strong>Licenciatura em Ciências Biológicas</strong>.
+                Olá! Sou a <strong class="text-white">Professora Juliana Maraccini</strong>. Sou graduada em
+                <strong>Engenharia Agronômica pela Universidade UniPinhal</strong> e possuo <strong>Licenciatura em
+                  Ciências Biológicas</strong>.
               </p>
 
               <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Há <strong>mais de 11 anos atuo como professora</strong>, lidando diretamente com a formação de crianças e adolescentes. Foi a partir dessa longa vivência em sala de aula que desenvolvi um método único baseado em <strong>ilustrações afetivas, mnemônicos visuais e resumos sintetizados alinhados à BNCC</strong>, desenhados para transformar matérias complexas em um aprendizado leve, rápido e inesquecível.
+                Há <strong>mais de 11 anos atuo como professora</strong>, lidando diretamente com a formação de crianças
+                e adolescentes. Foi a partir dessa longa vivência em sala de aula que desenvolvi um método único baseado
+                em <strong>ilustrações afetivas, mnemônicos visuais e resumos sintetizados alinhados à BNCC</strong>,
+                desenhados para transformar matérias complexas em um aprendizado leve, rápido e inesquecível.
               </p>
 
-              <div class="p-5 rounded-2xl bg-indigo-950/50 border border-indigo-500/30 text-xs sm:text-sm text-indigo-200 italic font-medium flex items-start gap-3.5 mt-4">
+              <div
+                class="p-5 rounded-2xl bg-indigo-950/50 border border-indigo-500/30 text-xs sm:text-sm text-indigo-200 italic font-medium flex items-start gap-3.5 mt-4">
                 <i data-lucide="quote" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i>
                 <span>
-                  "Aprender não precisa ser maçante. Quando o cérebro conecta cores, ilustrações marcantes e resumos lógicos, a retenção é imediata e o aluno sente prazer ao estudar."
+                  "Aprender não precisa ser maçante. Quando o cérebro conecta cores, ilustrações marcantes e resumos
+                  lógicos, a retenção é imediata e o aluno sente prazer ao estudar."
                   <strong class="block text-white not-italic mt-2 font-bold">— Profª. Juliana Maraccini</strong>
                 </span>
               </div>
@@ -226,160 +269,52 @@
       </div>
     </section>
 
-    <!-- DEGUSTADOR INTERATIVO DE MAPAS MENTAIS -->
-    <section id="degustacao" class="py-20 lg:py-28 scroll-mt-28 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs uppercase font-extrabold tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/30">
-            Degustação ao Vivo • Teste sem Pagar Nada
-          </span>
-          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4">
-            Sinta o Poder da Memória Visual na Prática
-          </h2>
-          <p class="mt-4 text-slate-300 text-base lg:text-lg">
-            Clique nos tópicos abaixo para explorar os resumos visuais reais produzidos pela Profª. Juliana Maraccini.
-          </p>
 
-          <!-- Abas de Matéria do Degustador -->
-          <div class="flex flex-wrap justify-center gap-3 mt-8">
-            <button onclick="loadMindMapSubject('biologia')" class="mm-subject-tab px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all bg-cyan-500 text-slate-950" data-subject="biologia">
-              🧬 Biologia: Teoria Celular & BNCC
-            </button>
-            <button onclick="loadMindMapSubject('direito')" class="mm-subject-tab px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-900 text-slate-400 border border-slate-800" data-subject="direito">
-              ⚖️ Direito Constitucional
-            </button>
-            <button onclick="loadMindMapSubject('quimica')" class="mm-subject-tab px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-900 text-slate-400 border border-slate-800" data-subject="quimica">
-              🧪 Química Orgânica
-            </button>
-          </div>
-        </div>
 
-        <!-- Interface Canvas / Explorer de Mapa Mental -->
-        <div class="mindmap-container rounded-3xl p-6 sm:p-10 border border-cyan-500/30 relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          
-          <!-- Lado Esquerdo: Nó Central + Sub-Nós Clicáveis -->
-          <div class="lg:col-span-7 space-y-4">
-            
-            <div class="flex items-center justify-between p-4.5 rounded-2xl bg-indigo-950/60 border border-indigo-500/40">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-400/40 flex items-center justify-center text-cyan-400">
-                  <i data-lucide="network" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <span class="text-[10px] uppercase font-bold text-slate-400 block">Tema Central do Mapa</span>
-                  <h3 id="mmRootTitle" class="text-base font-extrabold text-white">Biologia Celular & BNCC (Profª. Juliana Maraccini)</h3>
-                </div>
-              </div>
-              <span class="text-[10px] font-bold uppercase text-cyan-300 bg-cyan-500/20 px-3 py-1 rounded-lg">Clique em um Nó</span>
-            </div>
 
-            <!-- Grade de Nós Clicáveis -->
-            <div id="mmNodesGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <!-- Populado via main.js -->
-            </div>
-
-          </div>
-
-          <!-- Lado Direito: Quadro de Detalhes e Mnemônicos -->
-          <div class="lg:col-span-5">
-            <div class="glass-card rounded-2xl p-7 lg:p-8 border border-cyan-500/40 relative shadow-glow-cyan min-h-[340px] flex flex-col justify-center">
-              <div id="mmDetailContent">
-                <!-- Conteúdo preenchido dinamicamente via JS -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CALCULADORA INTERATIVA DE TEMPO E RETENÇÃO DE ESTUDO -->
-    <section id="calculadora" class="py-20 lg:py-24 scroll-mt-28 relative">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-indigo-500/40 shadow-glow-purple">
-          
-          <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="text-xs uppercase font-extrabold tracking-widest text-amber-400">Simulador de Produtividade</span>
-            <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white mt-3">
-              Quanto tempo você vai economizar até o dia da sua prova?
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-300 mt-3">
-              Arraste o botão abaixo com base em quantas horas por dia você se dedica aos estudos:
-            </p>
-          </div>
-
-          <div class="max-w-xl mx-auto space-y-8">
-            <div>
-              <div class="flex items-center justify-between mb-4 text-sm font-bold">
-                <span class="text-slate-300">Horas de estudo por dia:</span>
-                <span id="studyHoursValue" class="text-2xl font-black font-display text-cyan-400">4h</span>
-              </div>
-              <input type="range" id="studyHoursSlider" min="1" max="10" value="4" oninput="updateStudyCalculator()" class="w-full h-3 bg-slate-900 rounded-lg appearance-none cursor-pointer accent-cyan-400 border border-slate-800">
-              <div class="flex justify-between text-[10px] text-slate-500 mt-2 font-semibold">
-                <span>1 hora (Estudo Leve)</span>
-                <span>5 horas (Médio)</span>
-                <span>10 horas (Intensivo)</span>
-              </div>
-            </div>
-
-            <!-- Resultados Calculados -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div class="p-6 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 text-center">
-                <i data-lucide="clock" class="w-7 h-7 text-cyan-400 mx-auto mb-3"></i>
-                <div id="savedHoursDisplay" class="text-base sm:text-lg lg:text-xl font-extrabold text-white">+74 Horas economizadas/mês</div>
-                <p class="text-[11px] text-slate-400 mt-2">Tempo economizado sem resumos manuais prolixos.</p>
-              </div>
-
-              <div class="p-6 rounded-2xl bg-indigo-950/40 border border-indigo-500/30 text-center">
-                <i data-lucide="file-check" class="w-7 h-7 text-indigo-400 mx-auto mb-3"></i>
-                <div id="pagesSavedDisplay" class="text-base sm:text-lg lg:text-xl font-extrabold text-white">300 páginas condensadas em mapas</div>
-                <p class="text-[11px] text-slate-400 mt-2">Gatilhos neurológicos que fixam de primeira.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
 
     <!-- SEÇÃO COMPARATIVA: MÉTODO TRADICIONAL VS FONTE DO SABER -->
     <section id="metodo" class="py-20 lg:py-28 scroll-mt-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <h2 class="text-xs uppercase font-extrabold tracking-widest text-cyan-400 mb-3">A Ciência da Memorização Acelerada</h2>
+          <h2 class="text-xs uppercase font-extrabold tracking-widest text-cyan-400 mb-3">A Ciência da Memorização
+            Acelerada</h2>
           <p class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white">
             Por que o método tradicional te mantém exausto e sem resultado?
           </p>
           <p class="mt-4 text-slate-300 text-base lg:text-lg">
-            O cérebro humano processa imagens e conexões conceituais <strong class="text-cyan-400 font-bold">60.000 vezes mais rápido</strong> do que texto puro. Nossos materiais foram arquitetados para ativar sua memória visual de longo prazo.
+            O cérebro humano processa imagens e conexões conceituais <strong class="text-cyan-400 font-bold">60.000
+              vezes mais rápido</strong> do que texto puro. Nossos materiais foram arquitetados para ativar sua memória
+            visual de longo prazo.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-stretch">
-          
+
           <!-- Lado: Estudo Tradicional -->
           <div class="p-8 lg:p-10 rounded-3xl bg-red-950/20 border border-red-900/30 flex flex-col justify-between">
             <div>
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-xs font-bold uppercase mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-xs font-bold uppercase mb-6">
                 <i data-lucide="x-circle" class="w-4 h-4"></i> O Jeito Antigo e Cansativo
               </div>
               <h3 class="text-2xl lg:text-3xl font-bold text-slate-200 mb-5">Apostilas densas e sem direcionamento</h3>
               <ul class="space-y-4 text-sm sm:text-base text-slate-400">
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="x" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
-                  <span>Textos longos de centenas de páginas cheios de detalhes irrelevantes que nunca caem na prova.</span>
+                  <span>Textos longos de centenas de páginas cheios de detalhes irrelevantes que nunca caem na
+                    prova.</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="x" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
-                  <span>Sensação de ler por horas e esquecer tudo no dia seguinte (Curva do Esquecimento agressiva).</span>
+                  <span>Sensação de ler por horas e esquecer tudo no dia seguinte (Curva do Esquecimento
+                    agressiva).</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="x" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
-                  <span>Falta de correlação prática entre matérias e dificuldade de identificar pegadinhas da banca.</span>
+                  <span>Falta de correlação prática entre matérias e dificuldade de identificar pegadinhas da
+                    banca.</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="x" class="w-5 h-5 text-red-400 shrink-0 mt-0.5"></i>
@@ -393,33 +328,41 @@
           </div>
 
           <!-- Lado: O Método Profª. Juliana Maraccini -->
-          <div class="p-8 lg:p-10 rounded-3xl glass-card border-cyan-500/50 relative shadow-glow-cyan flex flex-col justify-between overflow-hidden">
+          <div
+            class="p-8 lg:p-10 rounded-3xl glass-card border-cyan-500/50 relative shadow-glow-cyan flex flex-col justify-between overflow-hidden">
             <div class="absolute -top-10 -right-10 w-44 h-44 bg-cyan-500/10 rounded-full blur-2xl"></div>
             <div>
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase mb-6">
                 <i data-lucide="check-circle-2" class="w-4 h-4"></i> Método Profª. Juliana Maraccini
               </div>
-              <h3 class="text-2xl lg:text-3xl font-bold text-white mb-5">Síntese visual, gatilhos mentais e prática cirúrgica</h3>
+              <h3 class="text-2xl lg:text-3xl font-bold text-white mb-5">Síntese visual, gatilhos mentais e prática
+                cirúrgica</h3>
               <ul class="space-y-4 text-sm sm:text-base text-slate-300">
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="check" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Mapas Mentais Ilustrados:</strong> Organização lógica com cores, ícones e hierarquia mnemônica que grudam na mente.</span>
+                  <span><strong>Mapas Mentais Ilustrados:</strong> Organização lógica com cores, ícones e hierarquia
+                    mnemônica que grudam na mente.</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="check" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Resumos Direto ao Ponto:</strong> Apenas o que é estatisticamente cobrado com base na BNCC e bancas de vestibular.</span>
+                  <span><strong>Resumos Direto ao Ponto:</strong> Apenas o que é estatisticamente cobrado com base na
+                    BNCC e bancas de vestibular.</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="check" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Simulados Estratégicos:</strong> Questões separadas por incidência com comentários passo a passo das pegadinhas.</span>
+                  <span><strong>Simulados Estratégicos:</strong> Questões separadas por incidência com comentários passo
+                    a passo das pegadinhas.</span>
                 </li>
                 <li class="flex items-start gap-3.5">
                   <i data-lucide="check" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Revisão em 15 Minutos:</strong> Revise uma disciplina inteira em minutos antes de fazer simulados.</span>
+                  <span><strong>Revisão em 15 Minutos:</strong> Revise uma disciplina inteira em minutos antes de fazer
+                    simulados.</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-10 pt-6 border-t border-cyan-500/20 text-xs sm:text-sm text-cyan-300 font-semibold flex items-center justify-between">
+            <div
+              class="mt-10 pt-6 border-t border-cyan-500/20 text-xs sm:text-sm text-cyan-300 font-semibold flex items-center justify-between">
               <span>Resultado: Domínio rápido e segurança absoluta no dia da prova.</span>
               <i data-lucide="award" class="w-5 h-5 text-amber-400"></i>
             </div>
@@ -432,37 +375,52 @@
     <!-- VITRINE DE PRODUTOS / CATÁLOGO INTERATIVO -->
     <section id="catalogo" class="py-20 lg:py-28 scroll-mt-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <span class="text-xs uppercase font-extrabold tracking-widest text-amber-400">Nossos Tesouros de Aprendizagem</span>
+          <span class="text-xs uppercase font-extrabold tracking-widest text-amber-400">Nossos Tesouros de
+            Aprendizagem</span>
           <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-3">
             Escolha seu Material e Comece Hoje
           </h2>
           <p class="mt-3 text-slate-300 text-base lg:text-lg">
-            Materiais em alta resolução para imprimir ou estudar no tablet, celular e computador com entrega digital imediata.
+            Materiais em alta resolução para imprimir ou estudar no tablet, celular e computador com entrega digital
+            imediata.
           </p>
 
           <!-- Campo de Busca em Tempo Real -->
           <div class="mt-8 max-w-xl mx-auto relative px-2 sm:px-0">
-            <input type="text" id="catalogSearch" placeholder="Pesquisar por matéria, exame ou palavra-chave (ex: Biologia, Teoria Celular, Redação, Direito)..." class="w-full px-5 py-4 pl-12 rounded-2xl glass-input text-sm placeholder-slate-500">
-            <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-6 sm:left-4 top-1/2 -translate-y-1/2"></i>
+            <input type="text" id="catalogSearch"
+              placeholder="Pesquisar por matéria, exame ou palavra-chave (ex: Biologia, Teoria Celular, Redação, Direito)..."
+              class="w-full px-5 py-4 pl-12 rounded-2xl glass-input text-sm placeholder-slate-500">
+            <i data-lucide="search"
+              class="w-5 h-5 text-slate-400 absolute left-6 sm:left-4 top-1/2 -translate-y-1/2"></i>
           </div>
 
           <!-- Filtros por Categoria -->
           <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-6" id="filterContainer">
-            <button class="filter-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-cyan-500 text-slate-950 shadow-glow-cyan" data-filter="all">
+            <button
+              class="filter-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-cyan-500 text-slate-950 shadow-glow-cyan"
+              data-filter="all">
               Todos os Materiais
             </button>
-            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600" data-filter="combos">
+            <button
+              class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600"
+              data-filter="combos">
               Combos Completos ⭐
             </button>
-            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600" data-filter="mapas">
+            <button
+              class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600"
+              data-filter="mapas">
               Mapas Mentais 🧠
             </button>
-            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600" data-filter="simulados">
+            <button
+              class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600"
+              data-filter="simulados">
               Simulados & Questões 📝
             </button>
-            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600" data-filter="materias">
+            <button
+              class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-600"
+              data-filter="materias">
               Por Matéria 🎓
             </button>
           </div>
@@ -479,42 +437,52 @@
     <!-- SEÇÃO AMOSTRA GRÁTIS / ISCA DIGITAL -->
     <section id="amostra" class="py-20 lg:py-24 scroll-mt-28 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-cyan-500/40 relative overflow-hidden shadow-glow-cyan">
-          
+        <div
+          class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-cyan-500/40 relative overflow-hidden shadow-glow-cyan">
+
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-400/10 text-cyan-300 text-xs font-bold uppercase mb-4">
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-400/10 text-cyan-300 text-xs font-bold uppercase mb-4">
                 <i data-lucide="gift" class="w-3.5 h-3.5"></i> Degustação Gratuita VIP
               </div>
               <h3 class="text-2xl sm:text-4xl font-extrabold font-display text-white">
                 Baixe Agora um Mini Pack de Mapas Mentais da Profª. Juliana Maraccini
               </h3>
               <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-                Comprove a eficácia do método com uma amostra contendo mapas mentais ilustrados de Biologia Celular, História das Células e Teoria Celular.
+                Comprove a eficácia do método com uma amostra contendo mapas mentais ilustrados de Biologia Celular,
+                História das Células e Teoria Celular.
               </p>
 
               <form id="leadForm" class="mt-8 space-y-4" onsubmit="handleLeadSubmit(event)">
                 <div class="flex flex-col sm:flex-row gap-3.5">
-                  <input type="text" id="leadName" required placeholder="Seu Primeiro Nome" class="w-full px-4.5 py-4 rounded-xl glass-input text-sm">
-                  <input type="email" id="leadEmail" required placeholder="Seu Melhor E-mail" class="w-full px-4.5 py-4 rounded-xl glass-input text-sm">
+                  <input type="text" id="leadName" required placeholder="Seu Primeiro Nome"
+                    class="w-full px-4.5 py-4 rounded-xl glass-input text-sm">
+                  <input type="email" id="leadEmail" required placeholder="Seu Melhor E-mail"
+                    class="w-full px-4.5 py-4 rounded-xl glass-input text-sm">
                 </div>
-                <button type="submit" class="w-full py-4.5 px-6 rounded-xl btn-gradient-primary text-slate-950 font-bold text-sm tracking-wide shadow-glow-cyan flex items-center justify-center gap-2">
+                <button type="submit"
+                  class="w-full py-4.5 px-6 rounded-xl btn-gradient-primary text-slate-950 font-bold text-sm tracking-wide shadow-glow-cyan flex items-center justify-center gap-2">
                   <i data-lucide="download" class="w-4 h-4 text-white"></i>
                   Quero Minha Amostra Grátis Imediatamente
                 </button>
               </form>
-              
-              <div id="leadFeedback" class="hidden mt-4 p-3.5 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs text-center font-medium">
+
+              <div id="leadFeedback"
+                class="hidden mt-4 p-3.5 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs text-center font-medium">
                 <!-- Preenchido via JS -->
               </div>
             </div>
 
             <!-- Preview Visual Amostra com a foto real do mapa da Professora -->
             <div class="lg:col-span-5 flex justify-center">
-              <div class="relative w-72 sm:w-80 aspect-[16/9] sm:aspect-[3/4] rounded-2xl glass-card border border-cyan-400/60 p-3 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden">
-                <img src="/assets/mapa_prof_maraccini.png" alt="Mapa Mental Profª. Juliana Maraccini" class="w-full h-full object-cover rounded-xl border border-slate-800">
-                <div class="absolute bottom-3 left-3 right-3 text-[10px] text-center text-white bg-slate-950/90 py-2 rounded-lg border border-cyan-500/40 font-bold">
+              <div
+                class="relative w-72 sm:w-80 aspect-[16/9] sm:aspect-[3/4] rounded-2xl glass-card border border-cyan-400/60 p-3 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-300 overflow-hidden">
+                <img src="/assets/mapa_prof_maraccini.png" alt="Mapa Mental Profª. Juliana Maraccini"
+                  class="w-full h-full object-cover rounded-xl border border-slate-800">
+                <div
+                  class="absolute bottom-3 left-3 right-3 text-[10px] text-center text-white bg-slate-950/90 py-2 rounded-lg border border-cyan-500/40 font-bold">
                   ✨ Amostra Ilustrada em Alta Resolução (PDF)
                 </div>
               </div>
@@ -529,7 +497,7 @@
     <!-- DEPOIMENTOS E AVALIAÇÕES DE ALUNOS -->
     <section id="depoimentos" class="py-20 lg:py-28 scroll-mt-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <span class="text-xs uppercase font-extrabold tracking-widest text-cyan-400">Comprovado por quem passou</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white mt-3">
@@ -541,7 +509,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          
+
           <!-- Testimonial 1 -->
           <div class="glass-card p-7 sm:p-8 rounded-2xl flex flex-col justify-between">
             <div>
@@ -553,11 +521,14 @@
                 <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               </div>
               <p class="text-sm sm:text-base text-slate-300 italic leading-relaxed">
-                "Eu travava em Natureza e Biologia porque eram muitos termos difíceis. Os mapas da Profª. Juliana Maraccini conectaram a matéria com cores e desenhos que na hora da prova eu enxergava a página na mente. Fui aprovada em Medicina!"
+                "Eu travava em Natureza e Biologia porque eram muitos termos difíceis. Os mapas da Profª. Juliana
+                Maraccini conectaram a matéria com cores e desenhos que na hora da prova eu enxergava a página na mente.
+                Fui aprovada em Medicina!"
               </p>
             </div>
             <div class="flex items-center gap-3.5 mt-8 pt-5 border-t border-slate-800">
-              <div class="w-11 h-11 rounded-full bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center font-bold text-cyan-300 text-sm">
+              <div
+                class="w-11 h-11 rounded-full bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center font-bold text-cyan-300 text-sm">
                 ML
               </div>
               <div>
@@ -569,7 +540,9 @@
 
           <!-- Testimonial 2 -->
           <div class="glass-card p-7 sm:p-8 rounded-2xl flex flex-col justify-between border-cyan-500/40 relative">
-            <span class="absolute top-4 right-4 text-[10px] uppercase font-bold px-2.5 py-1 rounded bg-cyan-500/20 text-cyan-300">Nota 960</span>
+            <span
+              class="absolute top-4 right-4 text-[10px] uppercase font-bold px-2.5 py-1 rounded bg-cyan-500/20 text-cyan-300">Nota
+              960</span>
             <div>
               <div class="flex items-center gap-1 text-amber-400 mb-4">
                 <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
@@ -579,11 +552,14 @@
                 <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               </div>
               <p class="text-sm sm:text-base text-slate-300 italic leading-relaxed">
-                "O combo de Redação Nota 1000 com os conectivos e os resumos de História me salvaram. Consegui revisar as 10 principais eras históricas em menos de duas semanas. Vale cada centavo, compra mais rápida que já fiz."
+                "O combo de Redação Nota 1000 com os conectivos e os resumos de História me salvaram. Consegui revisar
+                as 10 principais eras históricas em menos de duas semanas. Vale cada centavo, compra mais rápida que já
+                fiz."
               </p>
             </div>
             <div class="flex items-center gap-3.5 mt-8 pt-5 border-t border-slate-800">
-              <div class="w-11 h-11 rounded-full bg-indigo-500/20 border border-indigo-400/50 flex items-center justify-center font-bold text-indigo-300 text-sm">
+              <div
+                class="w-11 h-11 rounded-full bg-indigo-500/20 border border-indigo-400/50 flex items-center justify-center font-bold text-indigo-300 text-sm">
                 GC
               </div>
               <div>
@@ -604,11 +580,13 @@
                 <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               </div>
               <p class="text-sm sm:text-base text-slate-300 italic leading-relaxed">
-                "Trabalho o dia todo e só tenho 2 horas de noite pra estudar. Com os resumos da Professora Juliana eu não perco 1 minuto fazendo anotações feias. Já pego pronto, reviso e gabarito as questões!"
+                "Trabalho o dia todo e só tenho 2 horas de noite pra estudar. Com os resumos da Professora Juliana eu
+                não perco 1 minuto fazendo anotações feias. Já pego pronto, reviso e gabarito as questões!"
               </p>
             </div>
             <div class="flex items-center gap-3.5 mt-8 pt-5 border-t border-slate-800">
-              <div class="w-11 h-11 rounded-full bg-amber-500/20 border border-amber-400/50 flex items-center justify-center font-bold text-amber-300 text-sm">
+              <div
+                class="w-11 h-11 rounded-full bg-amber-500/20 border border-amber-400/50 flex items-center justify-center font-bold text-amber-300 text-sm">
                 TS
               </div>
               <div>
@@ -622,29 +600,12 @@
       </div>
     </section>
 
-    <!-- GARANTIA BLINDADA -->
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <div class="glass-card rounded-3xl p-8 sm:p-10 border border-amber-400/40 flex flex-col sm:flex-row items-center gap-6 lg:gap-8 shadow-glow-gold">
-          <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-amber-400/10 border border-amber-400/40 flex items-center justify-center shrink-0">
-            <i data-lucide="shield-check" class="w-14 h-14 text-amber-400"></i>
-          </div>
-          <div class="text-center sm:text-left">
-            <h3 class="text-2xl lg:text-3xl font-extrabold font-display text-white flex items-center justify-center sm:justify-start gap-2">
-              Risco Zero: Garantia Incondicional de 7 Dias
-            </h3>
-            <p class="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
-              Adquira qualquer material hoje. Baixe, estude, imprima e comprove a clareza do conteúdo. Se por qualquer razão você sentir que o material não facilitou seus estudos, basta solicitar reembolso com um único clique na plataforma e devolveremos 100% do valor. Sem perguntas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- FAQ (PERGUNTAS FREQUENTES) COM BUSCA -->
     <section id="faq" class="py-20 lg:py-28 scroll-mt-28">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center mb-12">
           <span class="text-xs uppercase font-extrabold tracking-widest text-cyan-400">Tire Suas Dúvidas</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white mt-3">
@@ -654,60 +615,72 @@
 
         <!-- Busca no FAQ -->
         <div class="mb-10 relative max-w-md mx-auto px-2 sm:px-0">
-          <input type="text" placeholder="Filtrar dúvida..." oninput="filterFaq(this.value)" class="w-full px-5 py-3.5 pl-11 rounded-xl glass-input text-xs">
+          <input type="text" placeholder="Filtrar dúvida..." oninput="filterFaq(this.value)"
+            class="w-full px-5 py-3.5 pl-11 rounded-xl glass-input text-xs">
           <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-6 sm:left-4 top-1/2 -translate-y-1/2"></i>
         </div>
 
         <div class="space-y-4" id="faqList">
-          
+
           <!-- Item 1 -->
           <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
-            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
+            <button onclick="toggleFaq(this)"
+              class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
               <span>Como recebo o acesso aos materiais após o pagamento?</span>
               <i data-lucide="chevron-down" class="w-5 h-5 text-cyan-400 transition-transform duration-300"></i>
             </button>
             <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-slate-300 text-sm">
               <div class="pb-5">
-                O envio é <strong>100% automático e imediato</strong>! Assim que seu pagamento por Pix ou cartão for aprovado na plataforma segura, você recebe um e-mail com o link direto para download de todos os arquivos em PDF de altíssima resolução.
+                O envio é <strong>100% automático e imediato</strong>! Assim que seu pagamento por Pix ou cartão for
+                aprovado na plataforma segura, você recebe um e-mail com o link direto para download de todos os
+                arquivos em PDF de altíssima resolução.
               </div>
             </div>
           </div>
 
           <!-- Item 2 -->
           <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
-            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
+            <button onclick="toggleFaq(this)"
+              class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
               <span>Posso imprimir os mapas mentais e resumos?</span>
               <i data-lucide="chevron-down" class="w-5 h-5 text-cyan-400 transition-transform duration-300"></i>
             </button>
             <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-slate-300 text-sm">
               <div class="pb-5">
-                Sim! Todos os materiais da Profª. Juliana Maraccini são formatados no padrão de página A4, preparados tanto para leitura nítida em telas (iPad, tablet, celular e notebook) quanto para impressão em cores ou preto e branco.
+                Sim! Todos os materiais da Profª. Juliana Maraccini são formatados no padrão de página A4, preparados
+                tanto para leitura nítida em telas (iPad, tablet, celular e notebook) quanto para impressão em cores ou
+                preto e branco.
               </div>
             </div>
           </div>
 
           <!-- Item 3 -->
           <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
-            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
+            <button onclick="toggleFaq(this)"
+              class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
               <span>Por quanto tempo tenho acesso aos arquivos?</span>
               <i data-lucide="chevron-down" class="w-5 h-5 text-cyan-400 transition-transform duration-300"></i>
             </button>
             <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-slate-300 text-sm">
               <div class="pb-5">
-                O acesso é <strong>vitalício</strong>. Uma vez feito o download, os arquivos são seus para sempre. Além disso, quando atualizamos os materiais ao longo do ano de 2026, você tem acesso às atualizações gratuitamente.
+                O acesso é <strong>vitalício</strong>. Uma vez feito o download, os arquivos são seus para sempre. Além
+                disso, quando atualizamos os materiais ao longo do ano de 2026, você tem acesso às atualizações
+                gratuitamente.
               </div>
             </div>
           </div>
 
           <!-- Item 4 -->
           <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
-            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
+            <button onclick="toggleFaq(this)"
+              class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white focus:outline-none">
               <span>Quais as formas de pagamento aceitas?</span>
               <i data-lucide="chevron-down" class="w-5 h-5 text-cyan-400 transition-transform duration-300"></i>
             </button>
             <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-slate-300 text-sm">
               <div class="pb-5">
-                Aceitamos Pix com liberação em segundos, cartão de crédito parcelado em até 12x e boleto bancário (via ambiente criptografado e 100% seguro).
+                Aceitamos Pix com liberação em segundos, cartão de crédito parcelado em até 12x e boleto bancário (via
+                ambiente criptografado e 100% seguro).
               </div>
             </div>
           </div>
@@ -720,15 +693,18 @@
     <!-- CTA PRÉ-RODAPÉ -->
     <section class="py-20 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        <div class="glass-card rounded-3xl p-10 sm:p-16 lg:p-20 border border-indigo-500/40 shadow-glow-purple relative overflow-hidden">
+        <div
+          class="glass-card rounded-3xl p-10 sm:p-16 lg:p-20 border border-indigo-500/40 shadow-glow-purple relative overflow-hidden">
           <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-display text-white">
             Não deixe sua aprovação para o próximo ano.
           </h2>
           <p class="mt-5 text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
-            Junte-se a milhares de estudantes que estudam com objetividade, menos estresse e muito mais retenção visual com a Profª. Juliana Maraccini.
+            Junte-se a milhares de estudantes que estudam com objetividade, menos estresse e muito mais retenção visual
+            com a Profª. Juliana Maraccini.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#catalogo" class="w-full sm:w-auto px-12 py-4.5 rounded-2xl btn-gradient-gold text-slate-950 font-black text-base lg:text-lg shadow-glow-gold">
+            <a href="#catalogo"
+              class="w-full sm:w-auto px-12 py-4.5 rounded-2xl btn-gradient-gold text-slate-950 font-black text-base lg:text-lg shadow-glow-gold">
               Garantir Meu Acesso Agora
             </a>
           </div>
@@ -742,22 +718,30 @@
   <footer class="border-t border-slate-800 bg-[#04060b] py-16 relative z-10 text-slate-400 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        
+
         <div class="md:col-span-2 space-y-4">
           <div class="flex items-center gap-2.5">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-slate-950 font-black">
+            <div
+              class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-slate-950 font-black">
               <i data-lucide="sparkles" class="w-5 h-5 text-slate-950"></i>
             </div>
             <span class="text-xl font-bold text-white font-display">PROFª. JULIANA MARACCINI</span>
           </div>
           <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
-            Plataforma dedicada a democratizar e acelerar a aprovação de estudantes através de recursos visuais de alta fixação neurológica.
+            Plataforma dedicada a democratizar e acelerar a aprovação de estudantes através de recursos visuais de alta
+            fixação neurológica.
           </p>
           <div class="flex flex-wrap items-center gap-2 pt-2 text-slate-400">
             <span class="text-xs font-semibold">Checkout 100% Seguro:</span>
-            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Pix Instantâneo</span>
-            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Cartão até 12x</span>
-            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Garantia 7 Dias</span>
+            <span
+              class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Pix
+              Instantâneo</span>
+            <span
+              class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Cartão
+              até 12x</span>
+            <span
+              class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">Garantia
+              7 Dias</span>
           </div>
         </div>
 
@@ -777,21 +761,15 @@
           <ul class="space-y-2.5 text-xs sm:text-sm">
             <li class="flex items-center gap-2">
               <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
-              <span>suporte@profmaraccini.com</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
-              <span>Atendimento via WhatsApp</span>
-            </li>
-            <li class="text-[11px] text-slate-500 pt-2">
-              Segunda a Sábado das 08h às 20h
+              <span>jujumaraccini@yahoo.com.br</span>
             </li>
           </ul>
         </div>
 
       </div>
 
-      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div
+        class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <p>© 2026 Profª. Juliana Maraccini • Fonte do Saber. Todos os direitos reservados.</p>
         <p class="flex items-center gap-4">
           <a href="#" class="hover:text-slate-400">Termos de Uso</a>
@@ -802,30 +780,31 @@
     </div>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE DE SUPORTE VIA WHATSAPP (CANTO INFERIOR DIREITO) -->
-  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Prof%C2%AA.%20Juliana!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais." target="_blank" class="fixed bottom-20 sm:bottom-6 right-6 z-40 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center group" aria-label="Suporte WhatsApp">
-    <i data-lucide="message-circle" class="w-7 h-7 text-slate-950"></i>
-    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap text-xs font-extrabold pl-0 group-hover:pl-2 text-slate-950">
-      Falar no WhatsApp
-    </span>
-  </a>
+
 
   <!-- BARRA FIXA FLUTUANTE DE CONVERSÃO EXCLUSIVA PARA MOBILE -->
-  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 glass-nav border-t border-slate-800/90 p-3 flex items-center gap-2.5 backdrop-blur-xl">
-    <a href="#amostra" class="w-1/2 py-3 px-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-center text-xs font-bold flex items-center justify-center gap-1">
+  <div
+    class="sm:hidden fixed bottom-0 left-0 right-0 z-40 glass-nav border-t border-slate-800/90 p-3 flex items-center gap-2.5 backdrop-blur-xl">
+    <a href="#amostra"
+      class="w-1/2 py-3 px-2 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-center text-xs font-bold flex items-center justify-center gap-1">
       <i data-lucide="download" class="w-3.5 h-3.5 text-cyan-400"></i> Amostra Grátis
     </a>
-    <a href="#catalogo" class="w-1/2 py-3 px-2 rounded-xl btn-gradient-primary text-center text-xs font-bold flex items-center justify-center gap-1">
+    <a href="#catalogo"
+      class="w-1/2 py-3 px-2 rounded-xl btn-gradient-primary text-center text-xs font-bold flex items-center justify-center gap-1">
       <i data-lucide="zap" class="w-3.5 h-3.5 text-white"></i> Ver Materiais
     </a>
   </div>
 
   <!-- MODAL DINÂMICO DE DETALHES DO PRODUTO -->
-  <div id="productModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md modal-overlay flex items-center justify-center p-4">
-    <div class="glass-card modal-content max-w-2xl w-full rounded-3xl border border-cyan-500/40 p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative">
-      
+  <div id="productModal"
+    class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md modal-overlay flex items-center justify-center p-4">
+    <div
+      class="glass-card modal-content max-w-2xl w-full rounded-3xl border border-cyan-500/40 p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative">
+
       <!-- Botão Fechar -->
-      <button onclick="closeProductModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800 focus:outline-none" aria-label="Fechar">
+      <button onclick="closeProductModal()"
+        class="absolute top-5 right-5 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800 focus:outline-none"
+        aria-label="Fechar">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
@@ -836,43 +815,57 @@
   </div>
 
   <!-- MODAL DE LEITOR INTERATIVO DE AMOSTRA GRÁTIS EM PDF -->
-  <div id="sampleReaderModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md modal-overlay flex items-center justify-center p-4">
-    <div class="glass-card modal-content max-w-3xl w-full rounded-3xl border border-cyan-500/50 p-6 sm:p-8 max-h-[92vh] overflow-y-auto relative">
-      
-      <button onclick="closeSampleReaderModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800" aria-label="Fechar">
+  <div id="sampleReaderModal"
+    class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md modal-overlay flex items-center justify-center p-4">
+    <div
+      class="glass-card modal-content max-w-3xl w-full rounded-3xl border border-cyan-500/50 p-6 sm:p-8 max-h-[92vh] overflow-y-auto relative">
+
+      <button onclick="closeSampleReaderModal()"
+        class="absolute top-5 right-5 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+        aria-label="Fechar">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
       <div class="space-y-6">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-400">
+          <div
+            class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-400">
             <i data-lucide="file-check-2" class="w-5 h-5"></i>
           </div>
           <div>
-            <span class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider">Visualizador de Amostra VIP</span>
-            <h3 id="sampleReaderGreeting" class="text-xl font-extrabold font-display text-white">Sua Amostra VIP está Liberada!</h3>
+            <span class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider">Visualizador de Amostra
+              VIP</span>
+            <h3 id="sampleReaderGreeting" class="text-xl font-extrabold font-display text-white">Sua Amostra VIP está
+              Liberada!</h3>
           </div>
         </div>
 
         <p class="text-xs text-slate-300">
-          Abaixo você pode folhear o mapa mental de alta incidência sobre <strong>História das Células & Teoria Celular (BNCC EF06CI05)</strong> produzido pela Profª. Juliana Maraccini. O arquivo em PDF também foi enviado para o seu e-mail.
+          Abaixo você pode folhear o mapa mental de alta incidência sobre <strong>História das Células & Teoria Celular
+            (BNCC EF06CI05)</strong> produzido pela Profª. Juliana Maraccini. O arquivo em PDF também foi enviado para o
+          seu e-mail.
         </p>
 
         <!-- Preview da Amostra com a foto real do mapa da Professora -->
         <div class="rounded-2xl border border-cyan-500/30 overflow-hidden bg-slate-950 p-2">
-          <img src="/assets/mapa_prof_maraccini.png" alt="Amostra Mapa Mental Profª. Juliana Maraccini" class="w-full rounded-xl object-contain max-h-96 border border-slate-800">
+          <img src="/assets/mapa_prof_maraccini.png" alt="Amostra Mapa Mental Profª. Juliana Maraccini"
+            class="w-full rounded-xl object-contain max-h-96 border border-slate-800">
         </div>
 
-        <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div
+          class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="space-y-1 text-center sm:text-left">
             <h4 class="text-sm font-bold text-white">Gostou da didática da Profª. Juliana Maraccini?</h4>
-            <p class="text-xs text-slate-300">Baixe o arquivo de degustação ou garanta o Combo Supremo com +350 mapas ilustrados!</p>
+            <p class="text-xs text-slate-300">Baixe o arquivo de degustação ou garanta o Combo Supremo com +350 mapas
+              ilustrados!</p>
           </div>
           <div class="flex flex-col sm:flex-row items-center gap-2.5 w-full sm:w-auto">
-            <a href="/assets/mapa_prof_maraccini.png" download="Amostra_Prof_Juliana_Maraccini.png" target="_blank" class="w-full sm:w-auto px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold flex items-center justify-center gap-1.5 transition-all">
+            <a href="/assets/mapa_prof_maraccini.png" download="Amostra_Prof_Juliana_Maraccini.png" target="_blank"
+              class="w-full sm:w-auto px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold flex items-center justify-center gap-1.5 transition-all">
               <i data-lucide="download" class="w-4 h-4"></i> Baixar Amostra
             </a>
-            <a href="#catalogo" onclick="closeSampleReaderModal()" class="w-full sm:w-auto px-5 py-3 rounded-xl btn-gradient-gold text-xs font-black text-slate-950 flex items-center justify-center gap-1.5 shrink-0">
+            <a href="#catalogo" onclick="closeSampleReaderModal()"
+              class="w-full sm:w-auto px-5 py-3 rounded-xl btn-gradient-gold text-xs font-black text-slate-950 flex items-center justify-center gap-1.5 shrink-0">
               <i data-lucide="sparkles" class="w-4 h-4"></i> Combo Completo
             </a>
           </div>
@@ -883,8 +876,10 @@
   </div>
 
   <!-- FLOATING SOCIAL PROOF TOAST -->
-  <div id="socialProofToast" class="fixed bottom-16 sm:bottom-6 left-4 sm:left-6 z-40 toast-hidden hidden sm:flex items-center gap-3 p-3.5 pr-5 rounded-2xl glass-card border border-cyan-500/40 shadow-glow-cyan">
-    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shrink-0">
+  <div id="socialProofToast"
+    class="fixed bottom-16 sm:bottom-6 left-4 sm:left-6 z-40 toast-hidden hidden sm:flex items-center gap-3 p-3.5 pr-5 rounded-2xl glass-card border border-cyan-500/40 shadow-glow-cyan">
+    <div
+      class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shrink-0">
       <i data-lucide="check-circle" class="w-5 h-5"></i>
     </div>
     <div class="text-xs">
@@ -897,4 +892,5 @@
   <script type="module" src="/main.js"></script>
 
 </body>
+
 </html>
