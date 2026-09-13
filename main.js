@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadMindMapSubject('biologia');
   updateStudyCalculator();
   startSocialProofToasts();
-  
+
   if (window.lucide) {
     window.lucide.createIcons();
   }
@@ -180,11 +180,11 @@ function renderProducts() {
 
   const filtered = products.filter(p => {
     const matchesFilter = activeFilter === 'all' || p.category === activeFilter;
-    const matchesSearch = searchQuery === '' || 
-      p.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+    const matchesSearch = searchQuery === '' ||
+      p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.features.some(f => f.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+
     return matchesFilter && matchesSearch;
   });
 
@@ -650,7 +650,7 @@ function toggleMobileMenu() {
 }
 
 // EXPORTAR FUNÇÕES PARA O GLOBAL
-window.filterProducts = function(cat) {
+window.filterProducts = function (cat) {
   activeFilter = cat;
   renderProducts();
 };
