@@ -37,7 +37,33 @@ function renderProducts() {
   if (!grid) return;
 
   const filtered = products.filter(p => {
-    const matchesFilter = activeFilter === 'all' || p.category === activeFilter;
+    let matchesFilter = activeFilter === 'all';
+
+    if (!matchesFilter) {
+      const fk = activeFilter.toLowerCase();
+      const cat = (p.category || '').toLowerCase();
+      const tags = Array.isArray(p.tags) ? p.tags.map(t => t.toLowerCase()) : [];
+      const title = (p.title || '').toLowerCase();
+      const desc = (p.desc || '').toLowerCase();
+      const feats = Array.isArray(p.features) ? p.features.join(' ').toLowerCase() : '';
+      const topics = Array.isArray(p.detailedTopics) ? p.detailedTopics.join(' ').toLowerCase() : '';
+      const fullText = `${title} ${desc} ${feats} ${topics}`;
+
+      matchesFilter = cat === fk || tags.includes(fk);
+
+      if (!matchesFilter) {
+        if (fk === 'biologia' && (fullText.includes('biologia') || fullText.includes('citologia') || fullText.includes('celular'))) matchesFilter = true;
+        if (fk === 'ciencias' && (fullText.includes('ciência') || fullText.includes('ciencias'))) matchesFilter = true;
+        if (fk === 'fisica' && (fullText.includes('física') || fullText.includes('fisica'))) matchesFilter = true;
+        if (fk === 'quimica' && (fullText.includes('química') || fullText.includes('quimica'))) matchesFilter = true;
+        if (fk === 'matematica' && (fullText.includes('matemática') || fullText.includes('matematica'))) matchesFilter = true;
+        if (fk === 'saresp' && fullText.includes('saresp')) matchesFilter = true;
+        if (fk === 'provapaulista' && (fullText.includes('paulista') || fullText.includes('prova paulista'))) matchesFilter = true;
+        if (fk === 'mapas' && (fullText.includes('mapa') || fullText.includes('resumo') || cat === 'mapas')) matchesFilter = true;
+        if (fk === 'simulados' && (fullText.includes('simulado') || fullText.includes('questõ') || fullText.includes('caderno') || cat === 'simulados')) matchesFilter = true;
+      }
+    }
+
     const matchesSearch = searchQuery === '' ||
       p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
