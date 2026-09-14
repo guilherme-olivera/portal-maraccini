@@ -56,10 +56,37 @@
     ]
   },
   {
-    "id": "ciencias-saresp-paulista",
+    "id": "biologia-genetica-ecologia",
+    "category": "mapas",
+    "tags": ["biologia", "ciencias", "saresp", "provapaulista", "mapas"],
+    "badge": "GENÉTICA & ECOLOGIA 🌿",
+    "badgeColor": "bg-emerald-400/20 text-emerald-300 border-emerald-400/40",
+    "title": "Resumos Visuais de Genética, Biotecnologia & Ecologia",
+    "desc": "Esquemas coloridos explicados da Profª. Juliana sobre Hereditariedade, Leis de Mendel, DNA/RNA, Biomas Brasileiros e Relações Ecológicas.",
+    "originalPrice": "R$ 79,00",
+    "price": "R$ 34,90",
+    "installments": "ou 3x de R$ 12,30",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-genetica",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_biologia.png",
+    "features": [
+      "Mapas Mentais de 1ª e 2ª Lei de Mendel e Código Genético",
+      "Infográficos de Relações Ecológicas e Biomas do Brasil",
+      "Biotecnologia: Transgênicos, Clonagem e Células-Tronco",
+      "Mnemônicos para não confundir Mitose e Meiose"
+    ],
+    "detailedTopics": [
+      "Genética: Herança ligada ao sexo, Tipagem Sanguínea ABO e Rh",
+      "Ecologia: Cadeias e Teias Alimentares, Ciclos Biogeoquímicos",
+      "Preservação Ambiental e Impactos Ecológicos para a Prova Paulista"
+    ]
+  },
+  {
+    "id": "ciencias-fundamental-saresp",
     "category": "mapas",
     "tags": ["ciencias", "saresp", "provapaulista", "mapas"],
-    "badge": "SARESP & PROVA PAULISTA 🔬",
+    "badge": "CIÊNCIAS 6º AO 9º ANO 🔬",
     "badgeColor": "bg-cyan-400/20 text-cyan-300 border-cyan-400/40",
     "title": "Kit Ciências Fundamental II: SARESP & Prova Paulista",
     "desc": "Resumos esquematizados e mapas mentais focados nos descritores cobrados nas avaliações oficiais do estado de São Paulo.",
@@ -83,13 +110,256 @@
     ]
   },
   {
-    "id": "simulado-gabaritado",
-    "category": "simulados",
-    "tags": ["simulados", "saresp", "provapaulista", "biologia", "ciencias"],
-    "badge": "QUESTÕES COMENTADAS PASSO A PASSO 🎯",
+    "id": "ciencias-corpo-humano",
+    "category": "mapas",
+    "tags": ["ciencias", "biologia", "saresp", "provapaulista", "mapas"],
+    "badge": "ANATOMIA ILUSTRADA 🫀",
+    "badgeColor": "bg-rose-400/20 text-rose-300 border-rose-400/40",
+    "title": "Anatomia & Fisiologia Humana Ilustrada",
+    "desc": "Todos os sistemas do corpo humano desenhados e explicados passo a passo com didática afetiva para fixar de primeira.",
+    "originalPrice": "R$ 69,00",
+    "price": "R$ 29,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-anatomia",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "Sistemas Digestório, Respiratório, Circulatório e Excretor",
+      "Sistema Nervoso, Sensorial e Endócrino em infográficos",
+      "Desenhos anatômicos rotulados sem poluição visual",
+      "Perfeito para provas de Ciências e vestibulinhos"
+    ],
+    "detailedTopics": [
+      "Integração entre os Sistemas no Metabolismo Humano",
+      "Doenças Frequentes e Hábitos Saudáveis (BNCC 8º ano)",
+      "Mnemônicos de Anatomia para provas práticas e escritas"
+    ]
+  },
+  {
+    "id": "fisica-descomplicada",
+    "category": "mapas",
+    "tags": ["fisica", "saresp", "provapaulista", "mapas"],
+    "badge": "FÍSICA VISUAL ⚡",
+    "badgeColor": "bg-amber-400/20 text-amber-300 border-amber-400/40",
+    "title": "Física Visual: Cinemática, Mecânica & Leis de Newton",
+    "desc": "Entenda Física de forma intuitiva com fórmulas transformadas em mnemônicos visuais e exemplos do dia a dia.",
+    "originalPrice": "R$ 79,00",
+    "price": "R$ 34,90",
+    "installments": "ou 3x de R$ 12,30",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-fisica",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_biologia.png",
+    "features": [
+      "Cinemática: MRU, MRUV, Queda Livre e Lançamentos",
+      "As 3 Leis de Newton explicadas com ilustrações práticas",
+      "Trabalho, Energia Mecânica e Conservação de Energia",
+      "Tabela de Fórmulas Curinga para consultar rápido"
+    ],
+    "detailedTopics": [
+      "Mnemônicos famosos (Vovô Ateu, Sorvete, França Brasil)",
+      "Unidades de Medida do Sistema Internacional (SI)",
+      "Resolução visual de gráficos de velocidade e aceleração"
+    ]
+  },
+  {
+    "id": "fisica-eletricidade-ondas",
+    "category": "mapas",
+    "tags": ["fisica", "provapaulista", "mapas"],
+    "badge": "ELETRICIDADE & ÓPTICA 💡",
+    "badgeColor": "bg-amber-400/20 text-amber-300 border-amber-400/40",
+    "title": "Eletricidade, Circuitos & Óptica Ilustrada",
+    "desc": "Esquemas práticos sobre Corrente Elétrica, Leis de Ohm, Circuitos, Espelhos Plásticos e Ondulatória.",
+    "originalPrice": "R$ 67,00",
+    "price": "R$ 29,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-eletricidade",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mindmap_biologia.png",
+    "features": [
+      "1ª e 2ª Lei de Ohm explicadas visualmente",
+      "Associação de Resistores em Série e Paralelo",
+      "Refração, Reflexão, Espelhos Concavos e Convexos",
+      "Ondas: Frequência, Comprimento de Onda e Fenômenos"
+    ],
+    "detailedTopics": [
+      "Consumo de Energia Elétrica em kWh nas residências",
+      "Espectro Eletromagnético e Aplicações Tecnológicas",
+      "Exercícios resolvidos passo a passo em esquemas"
+    ]
+  },
+  {
+    "id": "quimica-geral-inorganica",
+    "category": "mapas",
+    "tags": ["quimica", "saresp", "provapaulista", "mapas"],
+    "badge": "QUÍMICA GERAL 🧪",
     "badgeColor": "bg-indigo-400/20 text-indigo-300 border-indigo-400/40",
-    "title": "Caderno de 600 Questões: SARESP, Prova Paulista & ENEM",
-    "desc": "Questões gabaritadas e comentadas alternativa por alternativa com foco nas habilidades exigidas pelo SARESP, Prova Paulista e exames nacionais.",
+    "title": "Química Geral & Tabela Periódica Descomplicada",
+    "desc": "Estrutura Atômica, Tabela Periódica Ilustrada, Ligações Químicas e Estequiometria simplificadas pela Profª Juliana.",
+    "originalPrice": "R$ 79,00",
+    "price": "R$ 34,90",
+    "installments": "ou 3x de R$ 12,30",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-quimica",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_biologia.png",
+    "features": [
+      "Modelos Atômicos (Dalton, Thomson, Rutherford e Bohr)",
+      "Tabela Periódica Colorida por Famílias e Propriedades",
+      "Ligações Covalentes, Iônicas e Metálicas em diagramas",
+      "Funções Inorgânicas: Ácidos, Bases, Sais e Óxidos"
+    ],
+    "detailedTopics": [
+      "Regra do Octeto e Geometria Molecular",
+      "Estequiometria sem complicações matemáticas",
+      "Separação de Misturas no cotidiano e na indústria"
+    ]
+  },
+  {
+    "id": "quimica-organica-reacoes",
+    "category": "mapas",
+    "tags": ["quimica", "provapaulista", "mapas"],
+    "badge": "QUÍMICA ORGÂNICA ⚗️",
+    "badgeColor": "bg-indigo-400/20 text-indigo-300 border-indigo-400/40",
+    "title": "Química Orgânica & Reações em Mapas Mentais",
+    "desc": "Nomenclatura IUPAC, Funções Oxigenadas e Nitrogenadas, Isomeria Plana/Óptica e Polímeros em esquemas fáceis de memorizar.",
+    "originalPrice": "R$ 69,00",
+    "price": "R$ 29,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-organica",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mindmap_biologia.png",
+    "features": [
+      "Identificação rápida de Álcool, Cetona, Aldeído, Éster e Amina",
+      "Mnemônicos de Isomeria (PF-CMT)",
+      "Principais Reações Orgânicas de Adição e Substituição",
+      "Bioquímica: Carboidratos, Lipídios e Proteínas"
+    ],
+    "detailedTopics": [
+      "Cadeias Carbônicas: Classificação e Nomenclatura Oficial",
+      "Polímeros Sintéticos e Plásticos na Sustentabilidade",
+      "Questões de Química Orgânica da Prova Paulista resgatadas"
+    ]
+  },
+  {
+    "id": "matematica-geometria-funcoes",
+    "category": "mapas",
+    "tags": ["matematica", "saresp", "provapaulista", "mapas"],
+    "badge": "MATEMÁTICA VISUAL 📐",
+    "badgeColor": "bg-purple-400/20 text-purple-300 border-purple-400/40",
+    "title": "Matemática Visual: Geometria, Funções & Álgebra",
+    "desc": "A matemática sem mistérios: fórmulas de Geometria Plana e Espacial, Funções de 1º e 2º grau e Trigonometria em mapas ilustrados.",
+    "originalPrice": "R$ 89,00",
+    "price": "R$ 37,00",
+    "installments": "ou 3x de R$ 13,10",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-matematica",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mindmap_direito.png",
+    "features": [
+      "Áreas e Perímetros de Figuras Planas em infográficos",
+      "Teorema de Pitágoras e Trigonometria no Triângulo Retângulo",
+      "Função Afim e Quadrática: Vértice, Zeros e Gráficos",
+      "Porcentagem e Regra de Três com atalhos de cálculo"
+    ],
+    "detailedTopics": [
+      "Geometria Espacial: Volume de Prismas, Cilindros e Esferas",
+      "Equações e Inequações de 1º e 2º grau",
+      "Habilidades essenciais de Matemática para SARESP e Prova Paulista"
+    ]
+  },
+  {
+    "id": "matematica-estatistica-probabilidade",
+    "category": "mapas",
+    "tags": ["matematica", "provapaulista", "mapas"],
+    "badge": "ESTATÍSTICA & GRÁFICOS 📊",
+    "badgeColor": "bg-purple-400/20 text-purple-300 border-purple-400/40",
+    "title": "Estatística, Probabilidade & Análise de Gráficos",
+    "desc": "Interpretação de Gráficos, Tabelas, Média, Moda, Mediana e Probabilidade para gabaritar questões de provas oficiais.",
+    "originalPrice": "R$ 59,00",
+    "price": "R$ 27,90",
+    "installments": "pagamento único",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-estatistica",
+    "hasGuarantee": false,
+    "guaranteeText": "Download Digital Imediato",
+    "previewImg": "/assets/mindmap_direito.png",
+    "features": [
+      "Medidas de Tendência Central (Média Aritmética e Ponderada)",
+      "Cálculo de Probabilidade Simples e Eventos Sucessivos",
+      "Leitura rápida de Gráficos de Setores, Barras e Linhas",
+      "Matemática Financeira: Juros Simples e Compostos"
+    ],
+    "detailedTopics": [
+      "Leitura de tabelas complexas do SARESP",
+      "Análise Combinatória: Arranjo, Permutação e Combinação",
+      "Dicas para economizar tempo durante a prova"
+    ]
+  },
+  {
+    "id": "pack-saresp-gabarito",
+    "category": "combos",
+    "tags": ["saresp", "ciencias", "biologia", "matematica", "mapas", "simulados"],
+    "badge": "PREPARATÓRIO OFICIAL SARESP 🏫",
+    "badgeColor": "bg-cyan-400/20 text-cyan-300 border-cyan-400/40",
+    "title": "Kit Definitivo SARESP 2026: Resumos + Simulado Gabaritado",
+    "desc": "Preparatório completo com todos os descritores das provas do SARESP de Ciências e Matemática + 150 questões resolvidas.",
+    "originalPrice": "R$ 127,00",
+    "price": "R$ 49,90",
+    "installments": "ou 5x de R$ 10,90",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-saresp-kit",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "Resumos visuais cobrindo 100% da matriz de referência do SARESP",
+      "150 Questões reais de edições anteriores do SARESP comentadas",
+      "Simulado diagnóstico com folha de respostas",
+      "Guia da Profª Juliana para elevar a nota da escola"
+    ],
+    "detailedTopics": [
+      "Descritores D1 ao D30 de Ciências da Natureza",
+      "Descritores de Matemática e Resolução de Problemas",
+      "Dicas estratégicas para os dias de aplicação da prova"
+    ]
+  },
+  {
+    "id": "pack-prova-paulista-bimestral",
+    "category": "combos",
+    "tags": ["provapaulista", "ciencias", "biologia", "fisica", "quimica", "matematica", "mapas", "simulados"],
+    "badge": "PROVA PAULISTA SP 📝",
+    "badgeColor": "bg-indigo-400/20 text-indigo-300 border-indigo-400/40",
+    "title": "Super Pack Prova Paulista 2026 (1º ao 4º Bimestre)",
+    "desc": "Conteúdos revisados e alinhados com o currículo em ação do estado de São Paulo para garantir nota máxima nas Provas Paulistas.",
+    "originalPrice": "R$ 119,00",
+    "price": "R$ 47,90",
+    "installments": "ou 4x de R$ 12,90",
+    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-paulista-pack",
+    "hasGuarantee": true,
+    "guaranteeText": "Garantia de 7 dias",
+    "previewImg": "/assets/mapa_prof_maraccini.png",
+    "features": [
+      "Revisões Bimestrais de Ciências da Natureza e Exatas",
+      "Mapas Mentais das habilidades prioritárias de SP",
+      "Simulados no formato idêntico ao aplicativo CMSP / Prova Paulista",
+      "Acesso a atualizações gratuitas durante todo o ano letivo"
+    ],
+    "detailedTopics": [
+      "Habilidades do Currículo Paulista do Ensino Fundamental e Médio",
+      "Questões comentadas alternativa por alternativa",
+      "Cronograma bimestral de acompanhamento das aulas"
+    ]
+  },
+  {
+    "id": "caderno-600-questoes",
+    "category": "simulados",
+    "tags": ["simulados", "saresp", "provapaulista", "biologia", "ciencias", "fisica", "quimica", "matematica"],
+    "badge": "BANCO DE QUESTÕES 🎯",
+    "badgeColor": "bg-rose-400/20 text-rose-300 border-rose-400/40",
+    "title": "Caderno de 600 Questões Comentadas: SARESP & Prova Paulista",
+    "desc": "As questões mais recorrentes dos exames estaduais e vestibulinhos comentadas detalhadamente pela Profª. Juliana Maraccini.",
     "originalPrice": "R$ 89,00",
     "price": "R$ 34,90",
     "installments": "ou 3x de R$ 12,30",
@@ -98,49 +368,22 @@
     "guaranteeText": "Download Digital Imediato",
     "previewImg": "/assets/mapa_prof_maraccini.png",
     "features": [
-      "600 Questões separadas por matéria e descritor",
-      "Gabarito comentado detalhando os erros mais comuns",
-      "Questões das Provas Paulistas anteriores e SARESP",
-      "Formato PDF interativo com resposta ao final"
+      "600 Questões divididas por matéria e nível de dificuldade",
+      "Comentários detalhando o erro de cada pegadinha",
+      "Gabarito rápido e índice remissivo",
+      "Formato PDF interativo pronto para imprimir ou resolver na tela"
     ],
     "detailedTopics": [
-      "Questões de Ciências, Biologia, Física e Química",
-      "Análise das pegadinhas mais frequentes em provas paulistas",
-      "Estratégias de resolução rápida de enunciados"
-    ]
-  },
-  {
-    "id": "combo-formulas-exatas",
-    "category": "combos",
-    "tags": ["fisica", "quimica", "matematica", "mapas"],
-    "badge": "FÍSICA, QUÍMICA & MATEMÁTICA 📐",
-    "badgeColor": "bg-purple-400/20 text-purple-300 border-purple-400/40",
-    "title": "Combo Decorando Fórmulas: Física, Química & Matemática",
-    "desc": "Mnemônicos visuais e esquemas gráficos para memorizar todas as fórmulas de Física, Química e Matemática sem mofo.",
-    "originalPrice": "R$ 97,00",
-    "price": "R$ 39,90",
-    "installments": "ou 4x de R$ 10,80",
-    "checkoutUrl": "https://pay.kiwify.com.br/exemplo-formulas",
-    "hasGuarantee": true,
-    "guaranteeText": "Garantia de 7 dias",
-    "previewImg": "/assets/mindmap_biologia.png",
-    "features": [
-      "Mnemônicos Visuais de Física (MUV, Dinâmica, Elétrica)",
-      "Tabela Periódica & Reações Químicas Descomplicadas",
-      "Fórmulas de Geometria, Funções e Trigonometria",
-      "Dicas de cálculo rápido sem calculadora"
-    ],
-    "detailedTopics": [
-      "Física: Cinemática, Leis de Newton, Ondulatória e Termologia",
-      "Química: Estequiometria, Funções Orgânicas e Soluções",
-      "Matemática: Álgebra, Porcentagem, Geometria Plana e Espacial"
+      "Questões de Ciências, Biologia, Física, Química e Matemática",
+      "Estratégia de resolução por eliminação inteligente",
+      "Simulados cronometrados para treino de gestão de tempo"
     ]
   },
   {
     "id": "redacao-nota-1000",
     "category": "materias",
     "tags": ["mapas", "saresp", "provapaulista"],
-    "badge": "SEGREDO DOS 900+ ✍️",
+    "badge": "REDAÇÃO & LEITURA ✍️",
     "badgeColor": "bg-amber-400/20 text-amber-300 border-amber-400/40",
     "title": "Manual Visual de Redação & Leitura Crítica",
     "desc": "Estrutura infalível de parágrafos, conectivos estratégicos e mais de 40 repertórios curinga para redações e questões discursivas.",
@@ -154,13 +397,13 @@
     "features": [
       "3 Esqueletos de Redação prontos para adaptação",
       "40+ Repertórios Sociológicos e Filosóficos coringa",
-      "Tabela comparativa de Competências",
-      "Checklist de revisão antes de passar a limpo"
+      "Tabela comparativa de Competências de escrita",
+      "Checklist de revisão antes de entregar a prova"
     ],
     "detailedTopics": [
       "Módulo Introdução: teses bem articuladas",
-      "Módulo Argumentação Sólida: D1 e D2 sem furos de lógica",
-      "Módulo Proposta de Intervenção: os elementos obrigatórios"
+      "Módulo Argumentação Sólida: desenvolvimento sem furos",
+      "Módulo Proposta de Intervenção: 5 elementos obrigatórios"
     ]
   }
 ]
